@@ -213,9 +213,29 @@ a {
   font-weight: 200;
   line-height: 1.5; }
 
+ul.myUL {
+    display: inline-block;
+    text-align: left;
+    list-style-type: decimal-leading-zero;
+}
+.myUL li {
+    margin: 10px 0;
+}
+
+.col-md-6, .col-lg-4 {
+    flex: 1 1 300px; /* Ensure each column takes up equal space */
+    display: flex;
+}
+
 .site-service-item {
-  background: #333;
-  padding: 30px; }
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
   .site-service-item .icon {
     display: block;
     margin-bottom: 50px;
@@ -237,7 +257,9 @@ a {
       top: 50%; }
   .site-service-item h3 {
     font-size: 20px;
-    font-weight: 200; }
+    font-weight: 200; 
+    margin-bottom: 20px;
+  }
 
 .site-link {
   position: relative; }
